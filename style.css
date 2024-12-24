@@ -1,0 +1,54 @@
+body {
+    font-family: 'Pokemon Solid', Arial, sans-serif; /* Ensure the font is available */
+    /* You may need to import the font from a web service or use a fallback */
+    /* Example: @import url('https://fonts.googleapis.com/css2?family=Pokemon+Solid&display=swap'); */
+    background-color: #e0f7fa;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px;
+    margin: 50px auto;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+h1 {
+    color: #5c7cfa;
+    font-size: 3rem;
+}
+
+.story-text {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.choices, .restart-button {
+    margin-top: 20px;
+}
+
+.choice-button, .restart-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: #5c7cfa;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.choice-button:hover {
+    background-color: #95b9fb;
+}
+
+.restart-button:hover {
+    background-color: #95b9fb;
+}
