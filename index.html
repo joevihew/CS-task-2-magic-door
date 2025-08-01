@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokemon Adventure</h1>
+        <p class="story-text"> <?php echo $currentStory['text']; ?> </p>
+
+        <?php if (!empty($currentStory['choices'])): ?>
+            <div class="choices">
+                <?php foreach ($currentStory['choices'] as $step => $choice): ?>
+                    <a href="?step=<?php echo $step; ?>" class="choice-button"> <?php echo $choice; ?> </a>
+                <?php endforeach; ?>
+            </div>
+        <?php else: ?>
+            <a href="?restart=true" class="restart-button">Restart Adventure</a>
+        <?php endif; ?>
+    </div>
+</body>
+</html>
